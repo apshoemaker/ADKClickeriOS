@@ -40,14 +40,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxY-Cf-PoY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="3dd-0m-H9p"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Lifetime Click Count">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="LxY-Cf-PoY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="5d0-qK-1ji"/>
                             <constraint firstAttribute="trailing" secondItem="fUL-1o-PMx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="AXc-MA-nvT"/>
                             <constraint firstItem="hDm-Of-ZWH" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="EpB-g3-gOo"/>
-                            <constraint firstItem="fUL-1o-PMx" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Gbw-I3-ixC"/>
                             <constraint firstItem="fUL-1o-PMx" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Rbx-h2-b9C"/>
                             <constraint firstItem="hDm-Of-ZWH" firstAttribute="centerX" secondItem="fUL-1o-PMx" secondAttribute="centerX" type="default" id="lgL-Jb-2lq"/>
+                            <constraint firstItem="fUL-1o-PMx" firstAttribute="top" secondItem="LxY-Cf-PoY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ndF-BG-RQm"/>
+                            <constraint firstItem="LxY-Cf-PoY" firstAttribute="centerX" secondItem="fUL-1o-PMx" secondAttribute="centerX" type="default" id="r3u-FA-RzF"/>
                         </constraints>
                     </view>
                     <connections>
