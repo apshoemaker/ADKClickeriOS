@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3DED2416E2758B00DDE006 /* SMXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3DED2316E2758B00DDE006 /* SMXMLDocument.m */; };
 		0FBADF9616E162EE00194DC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBADF9516E162EE00194DC4 /* UIKit.framework */; };
 		0FBADF9816E162EE00194DC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBADF9716E162EE00194DC4 /* Foundation.framework */; };
 		0FBADF9A16E162EE00194DC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBADF9916E162EE00194DC4 /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F3DED2216E2758B00DDE006 /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLDocument.h; sourceTree = "<group>"; };
+		0F3DED2316E2758B00DDE006 /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLDocument.m; sourceTree = "<group>"; };
 		0FBADF9216E162EE00194DC4 /* Clicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBADF9516E162EE00194DC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0FBADF9716E162EE00194DC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 		0FBADF9B16E162EE00194DC4 /* Clicker */ = {
 			isa = PBXGroup;
 			children = (
+				0F3DED2216E2758B00DDE006 /* SMXMLDocument.h */,
+				0F3DED2316E2758B00DDE006 /* SMXMLDocument.m */,
 				0FBADFA416E162EE00194DC4 /* AppDelegate.h */,
 				0FBADFA516E162EE00194DC4 /* AppDelegate.m */,
 				0FBADFAD16E162EE00194DC4 /* MainStoryboard.storyboard */,
@@ -273,6 +278,7 @@
 				0FBADFA216E162EE00194DC4 /* main.m in Sources */,
 				0FBADFA616E162EE00194DC4 /* AppDelegate.m in Sources */,
 				0FBADFB216E162EE00194DC4 /* ViewController.m in Sources */,
+				0F3DED2416E2758B00DDE006 /* SMXMLDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +387,14 @@
 		0FBADFCB16E162EF00194DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Paul Shoemaker (Z4VDY6XVYR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Clicker/Clicker-Prefix.pch";
 				INFOPLIST_FILE = "Clicker/Clicker-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "187D1E31-0E88-490D-988A-F7994FEB00A5";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +402,16 @@
 		0FBADFCC16E162EF00194DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Anthony Shoemaker";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Clicker/Clicker-Prefix.pch";
 				INFOPLIST_FILE = "Clicker/Clicker-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "02279E5A-A488-4ED2-895E-B03BB92444BD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -453,6 +469,7 @@
 				0FBADFCC16E162EF00194DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FBADFCD16E162EF00194DC4 /* Build configuration list for PBXNativeTarget "ClickerTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +478,7 @@
 				0FBADFCF16E162EF00194DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
