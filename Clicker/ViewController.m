@@ -21,9 +21,11 @@
 {
     [super viewDidLoad];
     
-    //add ourselves as an observer to this protocol delegate in case the click count is altered
-    //outside of the app when it is inactive
-    //also takes care of first time gather
+    /**
+     *  add ourselves as an observer to this protocol delegate in case the click count is altered
+     *  outside of the app when it is inactive
+     *  also takes care of first time gather 
+     **/
     [[NSNotificationCenter defaultCenter] addObserver:self
                                         selector:@selector(getTotalClicks)
                                         name:UIApplicationDidBecomeActiveNotification object:nil];
